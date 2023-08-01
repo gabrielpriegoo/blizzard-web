@@ -1,0 +1,11 @@
+header {
+  position: fixed;
+}
+
+body {
+  background-color: #0057a8;
+  font-size: 63%;
+  font-weight: 400px;
+  -webkit-box-shadow: 4px 4px 4px 4px #003456;
+  box-shadow: 4px 4px 4px 4px #003456;
+}
