@@ -1,1 +1,1 @@
-"use strict";var number=350;
+"use strict";console.log("buttons");var number=350,_number=300003;console.log(_number);
