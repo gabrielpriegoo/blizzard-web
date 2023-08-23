@@ -5,6 +5,63 @@
   margin: 0 auto;
 }
 
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 1.6rem;
+  line-height: 4.1rem;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+  margin-right: 8px;
+}
+.btn-primary {
+  background-color: #00AEFF;
+  border-color: #00AEFF;
+}
+.btn-primary:hover {
+  background-color: #61CDFF;
+}
+.btn-outline {
+  border-color: #FFFFFF;
+}
+.btn-outline:hover {
+  color: #0B0D12;
+  background-color: #FFFFFF;
+}
+
+.game-card {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+}
+.game-card .image {
+  overflow: hidden;
+  border-radius: 6px;
+  width: 100%;
+  height: 38.3rem;
+  margin-bottom: 2.4rem;
+}
+.game-card .info h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+.game-card .info span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +69,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -28,5 +86,5 @@ button {
 }
 
 body {
-  background-color: #002550;
+  background-color: #020203;
 }
