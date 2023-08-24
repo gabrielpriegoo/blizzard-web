@@ -43,12 +43,22 @@
   width: 100%;
   max-width: 28rem;
 }
+.game-card:hover .image img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
 .game-card .image {
   overflow: hidden;
   border-radius: 6px;
   width: 100%;
   height: 38.3rem;
   margin-bottom: 2.4rem;
+}
+.game-card .image img {
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 .game-card .info h3 {
   font-weight: 600;
@@ -70,6 +80,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Poppins", sans-serif;
+  color: #ffffff;
 }
 
 html {
@@ -87,4 +98,89 @@ button {
 
 body {
   background-color: #020203;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 9.6rem;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+}
+header .container-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+  max-width: auto;
+  padding: 0 2rem;
+}
+header .left-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+header .left-container .logo {
+  position: relative;
+}
+header .left-container .logo::after {
+  content: "";
+  width: 4.3rem;
+  border-top: 2px solid #00AEFF;
+  position: absolute;
+  left: 0;
+  bottom: -2.9rem;
+}
+header .left-container nav {
+  margin-left: 11.2rem;
+}
+header .left-container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+header .left-container nav ul li:not(:first-child) {
+  margin-left: 3.4rem;
+}
+header .left-container nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #FFFFFF;
+}
+header .left-container nav ul li a img {
+  margin-left: 1.4rem;
+}
+header .right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+header .right-container .btn:not(:first-child) {
+  margin-left: 1.6rem;
 }
